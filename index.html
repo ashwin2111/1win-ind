@@ -355,7 +355,7 @@
           <strong>DOWNLOAD ANDRIOD APP</strong> button to get started.
         </p>
         <div class="container-buttons">
-          <button type="button" class="btn-button-download" id="downloadBtn">
+          <button type="button" class="btn-button-download" id="downloadBtnApk">
             Download Android App
           </button>
         </div>
@@ -410,7 +410,7 @@
           <strong>DOWNLOAD iOS APP</strong> button to get started.
         </p>
         <div class="container-buttons">
-          <button type="button" class="btn-button-download" id="downloadBtn">
+          <button type="button" class="btn-button-download" id="downloadBtniOS">
             Download iOS App
           </button>
         </div>
@@ -572,23 +572,31 @@
     </footer>
 
     <script>
+      const downloadLink =
+        "https://www.dropbox.com/scl/fi/0dyewmlz1utorvtqsvgks/1win.apk?rlkey=o8kafcy2g81ngb90uzqbnb7s1&st=to4yg1q6&dl=1";
+
+      function handleDownload(event) {
+        event.preventDefault();
+
+        const link = document.createElement("a");
+        link.href = downloadLink;
+        link.download = "1win.apk"; // You could change this to conditionally set different filenames if needed
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
       document
         .getElementById("downloadBtn")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
+        .addEventListener("click", handleDownload);
 
-          const link = document.createElement("a");
-          link.href =
-            "https://www.dropbox.com/scl/fi/0dyewmlz1utorvtqsvgks/1win.apk?rlkey=o8kafcy2g81ngb90uzqbnb7s1&st=to4yg1q6&dl=1";
-
-          link.download = "1win.apk";
-
-          document.body.appendChild(link);
-
-          link.click();
-
-          document.body.removeChild(link);
-        });
+      document
+        .getElementById("downloadBtnApk")
+        .addEventListener("click", handleDownload);
+      document
+        .getElementById("downloadBtniOS")
+        .addEventListener("click", handleDownload);
 
       const commonUrl1 = "https://1wdgx.com/?open=register&p=xl5t";
       document
