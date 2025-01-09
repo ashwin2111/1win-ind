@@ -22,9 +22,60 @@
       body {
         font-family: "Verdana", "sans-serif";
         line-height: 1.6;
-        background-color: #f4f4f4;
+        background-color: #11112a;
         text-align: center;
-        padding-top: 100px;
+      }
+
+      header {
+        color: white;
+        padding: 0.938rem 1.25rem;
+        text-align: center;
+      }
+
+      header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      header .header-buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      header .header-buttons button {
+        position: relative;
+        z-index: 11;
+        border-radius: 15px;
+        padding: 0.813rem 2.25rem;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .btn-button-register {
+        background-color: #11112a;
+        border: 1px solid white;
+        color: white;
+      }
+      .btn-button-download {
+        background-color: #00a5fb;
+        border: 1px solid #00a5fb;
+        color: white;
+      }
+
+      .btn-button-register:hover {
+        background-color: #00a5fb;
+        border: 1px solid #00a5fb;
+      }
+
+      .btn-button-download:hover {
+        background-color: #11112a;
+        border: 1px solid white;
       }
 
       h1 {
@@ -44,7 +95,7 @@
       }
 
       .btn-home {
-        background-color: #28a745;
+        background-color: #00a5fb;
         color: white;
         padding: 20px 30px;
         border: none;
@@ -56,11 +107,44 @@
       }
 
       .btn-home:hover {
-        background-color: #218838;
+        background-color: #11112a;
+        border: 1px solid white;
+      }
+
+      @media (max-width: 768px) {
+        header .header-buttons {
+          flex-direction: row;
+          gap: 1;
+        }
+
+        header .header-buttons button {
+          flex: 1;
+          width: 100%;
+          text-align: center;
+          margin: 0;
+        }
       }
     </style>
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://ik.imagekit.io/7u9crd0hg/images-1/logo.webp?updatedAt=1736416073956"
+          alt="logo-1win"
+          width="120"
+          height="45"
+        />
+      </div>
+      <div class="header-buttons">
+        <button type="button" class="btn-button-register" id="registerBtn">
+          Register
+        </button>
+        <button type="button" class="btn-button-download" id="downloadBtn">
+          Download
+        </button>
+      </div>
+    </header>
     <h1>404</h1>
     <p>Oops! The page you’re looking for doesn’t exist.</p>
     <p>Maybe you want to go back to the <a href="/">home page</a>?</p>
