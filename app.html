@@ -82,241 +82,45 @@
         "datePublished": "2025-01-09"
       }
     </script>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Poppins", Arial, sans-serif;
-        background-color: #11112a;
-        line-height: 1.6;
-      }
-
-      header {
-        color: white;
-        padding: 0.938rem 1.25rem;
-        text-align: center;
-      }
-
-      header .logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-
-      header .header-buttons {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-      }
-
-      header .header-buttons button {
-        position: relative;
-        z-index: 11;
-        border-radius: 15px;
-        padding: 0.813rem 2.25rem;
-        color: #fff;
-        font-size: 1rem;
-        cursor: pointer;
-        text-transform: uppercase;
-        font-weight: 600;
-        transition: all 0.3s ease;
-      }
-
-      .btn-button-register {
-        background-color: #11112a;
-        border: 1px solid white;
-        color: white;
-      }
-      .btn-button-download {
-        background-color: #00a5fb;
-        border: 1px solid #00a5fb;
-        color: white;
-      }
-
-      .btn-button-register:hover {
-        background-color: #00a5fb;
-        border: 1px solid #00a5fb;
-      }
-
-      .btn-button-download:hover {
-        background-color: #11112a;
-        border: 1px solid white;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 1.25rem;
-        color: white;
-        width: 80%;
-      }
-      .section-body button {
-        padding: 0.813rem 1rem;
-        text-transform: uppercase;
-        cursor: pointer;
-        border-radius: 15px;
-        font-size: 1rem;
-        font-weight: 600;
-        text-align: center;
-        display: inline-block;
-        margin: 10px 0;
-        transition: box-shadow 0.3s ease, background-color 0.3s ease;
-      }
-
-      .container h1 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-      }
-
-      .container p {
-        font-size: 1rem;
-        margin-bottom: 15px;
-        margin-top: 20px;
-        text-align: left;
-      }
-
-      .container-buttons {
-        text-align: center;
-      }
-      .content-container {
-        padding: 0.938rem;
-      }
-
-      .btn-button-container {
-        background: linear-gradient(93.85deg, #64c7ff 0.45%, #0877f9 100%);
-        color: white;
-        padding: 0.813rem 1rem;
-        border: none;
-        text-transform: uppercase;
-        cursor: pointer;
-        border-radius: 15px;
-        font-size: 1rem;
-        font-weight: 600;
-        text-align: center;
-        display: inline-block;
-        margin: 10px 0;
-        width: 25%;
-        transition: box-shadow 0.3s ease, background-color 0.3s ease;
-      }
-
-      .btn-button-container:hover {
-        color: #11112a;
-      }
-
-      .divider {
-        border-top: 1.5px solid #333; /* Add a solid line between sections */
-        margin: 40px; /* Adjust space around the divider */
-      }
-
-      .section-main-body {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      .section-body {
-        background-color: #17233a;
-        border-radius: 15px;
-        padding: 1.25rem;
-      }
-
-      .section-body h2 {
-        font-size: 1.5rem;
-        margin: 15px 0;
-        text-align: center;
-      }
-
-      footer {
-        text-align: center;
-        padding: 1.25rem;
-        background: #2c3e50;
-        color: white;
-        font-size: 14px;
-      }
-
-      /* Table Styles */
-      .device-table {
-        width: 100%;
-        margin: 20px 0;
-        border-collapse: collapse;
-        text-align: left;
-      }
-
-      .device-table th,
-      .device-table td {
-        padding: 0.75rem;
-      }
-
-      .device-table th {
-        background-color: #17233a;
-        color: white;
-      }
-
-      .device-table tr:nth-child(odd) {
-        background-color: #1e1e48; /* Dark Blue for odd rows */
-      }
-
-      .device-table tr:nth-child(even) {
-        background-color: #121235; /* Darker Blue for even rows */
-      }
-
-      .header-section-faq {
-        margin-bottom: 10px;
-        margin-top: 20px;
-      }
-      .footer-link {
-        text-decoration: none;
-        color: white;
-      }
-
-      @media (max-width: 768px) {
-        header .header-buttons {
-          flex-direction: row;
-          gap: 1;
-        }
-
-        header .header-buttons button {
-          flex: 1;
-          width: 100%;
-          text-align: center;
-          margin: 0;
-        }
-        .container h1 {
-          font-size: 1.5rem;
-        }
-        .container {
-          width: 90%;
-          margin: 0 auto;
-        }
-        .btn-button-container {
-          width: 100%;
-        }
-        .device-table th,
-        .device-table td {
-          font-size: 0.875rem;
-          padding: 0.625rem;
-        }
-
-        .device-table {
-          font-size: 0.875rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="logo">
+      <div class="header-container">
         <img
           src="https://ik.imagekit.io/7u9crd0hg/images-1/logo.webp?updatedAt=1736416073956"
           alt="logo-1win"
-          width="120"
-          height="45"
+          width="76"
+          height="36"
+          class="header-logo"
         />
+        <!-- Hamburger Menu (3 Lines) -->
+        <div class="hamburger-menu hamburger-menu-left" id="hamburgerMenuLeft">
+          <span></span><span></span><span></span>
+        </div>
       </div>
+
+      <!-- Navbar Links (Initially Hidden) -->
+      <nav class="header-nav">
+        <ul class="navbar-links">
+          <li><a href="/1win-ind/app.html">App</a></li>
+          <li>
+            <a href="/1win-ind/aviator.html"
+              ><span class="name-aviator">Aviator</span></a
+            >
+          </li>
+          <li>
+            <a href="/1win-ind/promocode.html">PromoCode</a>
+          </li>
+          <li>
+            <a href="/1win-ind/index.html">Registration</a>
+          </li>
+          <li><a href="/1win-ind/index.html">Contacts</a></li>
+          <li><a href="/1win-ind/index.html">Support</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Buttons (Below Logo) -->
       <div class="header-buttons">
         <button type="button" class="btn-button-register" id="registerBtn">
           Register
@@ -325,7 +129,42 @@
           Download
         </button>
       </div>
+      <div class="hamburger-menu hamburger-menu-right" id="hamburgerMenuRight">
+        <span></span><span></span><span></span>
+      </div>
     </header>
+
+    <!-- Mobile Navbar Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+      <div class="mobile-nav-content">
+        <div class="header-mobile">
+          <img
+            src="https://ik.imagekit.io/7u9crd0hg/images-1/logo.webp?updatedAt=1736416073956"
+            alt="logo-1win"
+            width="76"
+            height="26"
+          />
+          <div class="close-button" id="closeNavButton">X</div>
+        </div>
+
+        <ul class="navbar-links">
+          <li><a href="/1win-ind/app.html">App</a></li>
+          <li>
+            <a href="/1win-ind/aviator.html"
+              ><span class="name-aviator">Aviator</span></a
+            >
+          </li>
+          <li>
+            <a href="/1win-ind/promocode.html">PromoCode</a>
+          </li>
+          <li>
+            <a href="/1win-ind/index.html">Registration</a>
+          </li>
+          <li><a href="/1win-ind/index.html">Contacts</a></li>
+          <li><a href="/1win-ind/index.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="container">
       <section class="section-main-body">
@@ -535,7 +374,7 @@
           updated automatically. The updates happen immediately after the launch
           of the app so that users don’t need to do anything.
         </p>
-        <h4 class="header-section-faq">
+        <h4 class="header-section-faq" id="contactSupport">
           <em>🔐 Can I Contact Customer Support Through the 1win App?</em>
         </h4>
         <p>
@@ -568,59 +407,6 @@
       Rights Reserved.
     </footer>
 
-    <script>
-      const downloadLink =
-        "https://www.dropbox.com/scl/fi/0dyewmlz1utorvtqsvgks/1win.apk?rlkey=o8kafcy2g81ngb90uzqbnb7s1&st=to4yg1q6&dl=1";
-
-      function handleDownload(event) {
-        event.preventDefault();
-
-        const link = document.createElement("a");
-        link.href = downloadLink;
-        link.download = "1win.apk"; // You could change this to conditionally set different filenames if needed
-
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }
-
-      document
-        .getElementById("downloadBtn")
-        .addEventListener("click", handleDownload);
-
-      document
-        .getElementById("downloadBtnApk")
-        .addEventListener("click", handleDownload);
-      document
-        .getElementById("downloadBtniOS")
-        .addEventListener("click", handleDownload);
-
-      const commonUrl1 = "https://1wdgx.com/?open=register&p=xl5t";
-      document
-        .getElementById("registerBtn")
-        .addEventListener("click", function () {
-          window.location.href = commonUrl1;
-        });
-
-      document
-        .getElementById("usePromocode")
-        .addEventListener("click", function () {
-          window.location.href = commonUrl1;
-        });
-
-      // Join Now button and Official Website button share the same link
-      const commonUrl2 = "https://1wuyue.top/?p=7ahd";
-      document
-        .getElementById("joinnowBtn")
-        .addEventListener("click", function () {
-          window.location.href = commonUrl2;
-        });
-
-      document
-        .getElementById("officialWebsite")
-        .addEventListener("click", function () {
-          window.location.href = commonUrl2;
-        });
-    </script>
+    <script src="script.js" defer></script>
   </body>
 </html>
