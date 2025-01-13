@@ -45,6 +45,21 @@ header {
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
+.section-body .ol-list {
+  margin-top: 16px;
+  margin-left: 34px;
+}
+
+.section-body .ol-list li {
+  margin-bottom: 15px;
+}
+
+.internal-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
 .container h1 {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -415,10 +430,12 @@ header .header-buttons button {
   }
   .container h1 {
     font-size: 1.5rem;
+    margin-top: 25px;
   }
   .container {
     width: 90%;
     margin: 0 auto;
+    padding: 0;
   }
   .btn-button-container {
     width: 100%;
@@ -431,5 +448,10 @@ header .header-buttons button {
 
   .device-table {
     font-size: 0.875rem;
+  }
+
+  .section-body .ol-list {
+    margin-top: 20px;
+    margin-left: 5px;
   }
 }
