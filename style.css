@@ -362,7 +362,7 @@ header .header-buttons button {
 }
 
 /* Dropdown container */
-.navbar-links .dropdown {
+header .navbar-links li .dropdown {
   position: relative;
   display: inline-block;
 }
