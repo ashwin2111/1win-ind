@@ -10,6 +10,10 @@ body {
   /* background-image: linear-gradient(to right, #3d266f, #171940 71%); */
   line-height: 1.6;
 }
+header .navbar-links li .dropdown {
+  position: relative;
+  display: inline-block;
+}
 
 header {
   color: white;
