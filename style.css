@@ -10,10 +10,6 @@ body {
   /* background-image: linear-gradient(to right, #3d266f, #171940 71%); */
   line-height: 1.6;
 }
-header .navbar-links li .dropdown {
-  position: relative;
-  display: inline-block;
-}
 
 header {
   color: white;
@@ -366,9 +362,9 @@ header .header-buttons button {
 }
 
 /* Dropdown container */
-header .navbar-links li .dropdown {
-  position: relative;
-  display: inline-block;
+.navbar-links .dropdown {
+  position: relative !important;
+  display: inline-block !important; 
 }
 
 /* Dropdown button (contacts) */
