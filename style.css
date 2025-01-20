@@ -202,13 +202,13 @@ header .navbar-links {
   gap: 20px;
 }
 
-header .navbar-links li {
+header .navbar-links .nondrop {
   padding-right: 26px;
   position: relative;
   transition: transform 0.3s ease;
 }
 
-header .navbar-links li:hover {
+header .navbar-links .nondrop:hover {
   transform: scale(1.1);
 }
 
@@ -363,8 +363,9 @@ header .header-buttons button {
 
 /* Dropdown container */
 .navbar-links .dropdown {
+  padding-right: 26px;
   position: relative !important;
-  display: inline-block !important; 
+  display: inline-block !important;
 }
 
 /* Dropdown button (contacts) */
