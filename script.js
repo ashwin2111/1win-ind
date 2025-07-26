@@ -24,10 +24,11 @@ const elements = {
   ),
 };
 
-document.querySelectorAll(".btn-join-luckyjet").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    console.log("LuckyJet button clicked!");
-    window.location.href = luckyJetUrl;
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".btn-join-luckyjet").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      window.location.href = luckyJetUrl;
+    });
   });
 });
 
