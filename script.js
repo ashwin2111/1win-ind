@@ -3,6 +3,9 @@ const downloadLink =
   "https://www.dropbox.com/scl/fi/0dyewmlz1utorvtqsvgks/1win.apk?rlkey=o8kafcy2g81ngb90uzqbnb7s1&st=to4yg1q6&dl=1";
 const commonUrl1 = "https://1wdgx.com/?open=register&p=xl5t";
 const commonUrl2 = "https://1wuyue.top/?p=7ahd";
+const luckyJetUrl = "https://1weaou.life/v3/lucky-jet-updated?p=9kh3";
+const jetXUrl = "https://1weaou.life/v3/jetx-landing?p=w19z";
+const aviatorUrl = "https://1weaou.life/v3/reg-form-aviator?p=8f67";
 
 // Button IDs
 const downloadBtns = ["downloadBtn", "downloadBtnApk", "downloadBtniOS"];
@@ -20,6 +23,27 @@ const elements = {
     "#hamburgerMenuLeft, #hamburgerMenuRight"
   ),
 };
+
+document.querySelectorAll(".btn-join-luckyjet").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log("LuckyJet button clicked!");
+    window.location.href = luckyJetUrl;
+  });
+});
+
+document.querySelectorAll(".btn-join-jetx").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log("LuckyJet button clicked!");
+    window.location.href = jetXUrl;
+  });
+});
+
+document.querySelectorAll(".btn-join-aviator").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log("LuckyJet button clicked!");
+    window.location.href = aviatorUrl;
+  });
+});
 
 // Function to handle navigation redirects
 function handleRedirect(elementId, url) {
