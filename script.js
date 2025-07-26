@@ -15,6 +15,12 @@ const elements = {
   registerBtn: document.getElementById("registerBtn"),
   usePromocode: document.getElementById("usePromocode"),
   joinnowBtn: document.getElementById("joinnowBtn"),
+  joinLuckyJetBtn1: document.getElementById("joinLuckyJetBtn1"),
+  joinLuckyJetBtn2: document.getElementById("joinLuckyJetBtn2"),
+  joinJetxBtn1: document.getElementById("joinJetxBtn1"),
+  joinJetxBtn2: document.getElementById("joinJetxBtn2"),
+  joinAviatorBtn1: document.getElementById("joinAviatorBtnn1"),
+  joinAviatorBtn2: document.getElementById("joinAviatorBtn2"),
   officialWebsite: document.getElementById("officialWebsite"),
   mobileNavOverlay: document.getElementById("mobileNavOverlay"),
   closeNavButton: document.getElementById("closeNavButton"),
@@ -23,26 +29,6 @@ const elements = {
     "#hamburgerMenuLeft, #hamburgerMenuRight"
   ),
 };
-
-document.addEventListener("click", function (e) {
-  if (e.target.closest(".btn-join-luckyjet")) {
-    window.location.href = luckyJetUrl;
-  }
-});
-
-document.querySelectorAll(".btn-join-jetx").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    console.log("LuckyJet button clicked!");
-    window.location.href = jetXUrl;
-  });
-});
-
-document.querySelectorAll(".btn-join-aviator").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    console.log("LuckyJet button clicked!");
-    window.location.href = aviatorUrl;
-  });
-});
 
 // Function to handle navigation redirects
 function handleRedirect(elementId, url) {
@@ -106,6 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
   handleRedirect("usePromocode", commonUrl1);
   handleRedirect("joinnowBtn", commonUrl2);
   handleRedirect("officialWebsite", commonUrl2);
+  handleRedirect("joinLuckyJetBtn1", luckyJetUrl);
+  handleRedirect("joinLuckyJetBtn2", luckyJetUrl);
+  handleRedirect("joinJetxBtn1", jetXUrl);
+  handleRedirect("joinJetxBtn2", jetXUrl);
+  handleRedirect("joinAviatorBtnn1", aviatorUrl);
+  handleRedirect("joinAviatorBtn2", aviatorUrl);
 
   // Setup mobile navigation
   setupMobileNavigation();
