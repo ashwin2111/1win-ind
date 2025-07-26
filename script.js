@@ -5,6 +5,7 @@ const commonUrl1 = "https://1wdgx.com/?open=register&p=xl5t";
 const commonUrl2 = "https://1wuyue.top/?p=7ahd";
 const jetXUrl = "https://1weaou.life/v3/jetx-landing?p=w19z";
 const aviatorUrl = "https://1weaou.life/v3/reg-form-aviator?p=8f67";
+const luckyJetUrl = "https://1weaou.life/v3/lucky-jet-updated?p=9kh3";
 
 // Button IDs
 const downloadBtns = ["downloadBtn", "downloadBtnApk", "downloadBtniOS"];
@@ -23,13 +24,10 @@ const elements = {
   ),
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  const luckyJetUrl = "https://1weaou.life/v3/lucky-jet-updated?p=9kh3";
-  document.querySelectorAll(".btn-join-luckyjet").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      window.location.href = luckyJetUrl;
-    });
-  });
+document.addEventListener("click", function (e) {
+  if (e.target.closest(".btn-join-luckyjet")) {
+    window.location.href = luckyJetUrl;
+  }
 });
 
 document.querySelectorAll(".btn-join-jetx").forEach((btn) => {
